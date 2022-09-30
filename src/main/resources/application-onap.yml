@@ -1,0 +1,19 @@
+apiVersion: 1.0
+logging:
+    level:
+        com:
+            assignment:
+                springboot:
+                    mongo: DEBUG
+    pattern:
+        console: '%d{yyyy-MM-dd HH:mm:ss} - %msg%n'
+server:
+    port: 8899
+spring:
+    application:
+        name: bmp-usage-management-business-service
+    data:
+        mongodb:
+            database: BMP_USAGE_MANAGEMENT
+            host: 10.0.5.36
+            port: 27017
